@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaMind — Chat</title>
+    <title>ThreadBurst— Chat</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/green-screen.min.css">
@@ -51,7 +51,7 @@
                 <button class="navbar__sidebar-toggle" id="sidebarToggle" title="Toggle history">
                     <i class='bx bx-sidebar'></i>
                 </button>
-                <span class="navbar__logo">NovaMind</span>
+                <span class="navbar__logo">ThreadBurst</span>
             </div>
 
             <div class="navbar__right">
@@ -121,7 +121,7 @@
                     </button>
                 </div>
             </form>
-            <p class="prompt__disclaim">NovaMind may make mistakes — verify important information.</p>
+            <p class="prompt__disclaim">ThreadBurst may make mistakes — verify important information.</p>
         </section>
 
     </div><!-- /.main -->
@@ -226,7 +226,7 @@ let activeSessionId = null;
 let isGenerating    = false;
 let currentMsg      = null;
 
-const GOOGLE_API_KEY    = "AIzaSyC6_GSSUR6goBM9-SbhCw4m0GIl6SfICMk";
+const GOOGLE_API_KEY    = "AIzaSyAw74rKSW7mwKzq3qsB2koDzWrmiUEv5Hw";
 const API_REQUEST_URL   = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GOOGLE_API_KEY}`;
 
 function saveSessions() { localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions)); }
